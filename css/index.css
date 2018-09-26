@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.portfolioContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.svgBox {
+  position: relative;
+  z-index: 10;
+}
+
+path.cls-1 {
+  position: fixed;
+  stroke-width: 2px;
+  fill: rgba(0, 0, 0, 0);
+  z-index: 10;
+  stroke: #e45700;
+}
+
+.imgCommon {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgCont1 {
+  top: 2vh;
+  left: 4vw;
+}
+
+.imgCont2 {
+  top: 10vh;
+  left: 20vw;
+}
+
+.imgCont3 {
+  top: 30vh;
+  left: 50vw;
+}
+
+.imgCont4 {
+  top: 20vh;
+  left: 30vw;
+}
+
+.imgCont5 {
+  top: 40vh;
+  left: 10vw;
+}
+
+.imgCont6 {
+  top: 16vh;
+  left: 70vw;
+}
+
+.imgCont7 {
+  top: 50vh;
+  left: 80vw;
+}
+
+.imgCont8 {
+  top: 70vh;
+  left: 42vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolioContainer {
+
+    overflow: auto;
+    height: auto;
+  }
+
+  .svgBox {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+  }
+  path.cls-1 {
+    stroke-width: 2px;
+    fill: #e45700;
+    stroke: #e45700;
+  }
+  .imgCommon {
+    position: relative;
+  }
+  .imgCont1 {
+    top: 1vh;
+    left: 0;
+  }
+
+  .imgCont2 {
+    top: 10vh;
+    left: 20vw;
+  }
+
+  .imgCont3 {
+    top: 30vh;
+    left: 50vw;
+  }
+
+  .imgCont4 {
+    top: 20vh;
+    left: 30vw;
+  }
+
+  .imgCont5 {
+    top: 40vh;
+    left: 10vw;
+  }
+
+  .imgCont6 {
+    top: 16vh;
+    left: 70vw;
+  }
+
+  .imgCont7 {
+    top: 50vh;
+    left: 80vw;
+  }
+
+  .imgCont8 {
+    top: 70vh;
+    left: 42vw;
+  }
+
+
+}

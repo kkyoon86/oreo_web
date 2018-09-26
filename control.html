@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head>
+
+</head>
+
+<body onload="">
+	<button onclick="openWin()">open</button>
+	<script>
+		var myWindow;
+		var winW, winH, targetW, targetH;
+		winW = targetW = 200;
+		winH = targetH = 200;
+
+		function openWin() {
+			myWindow = window.open("index.html", "", "width=" + winW + ",height=" + winH + ",menubar=0");
+		}
+
+	</script>
+</body>
+
+</html>
