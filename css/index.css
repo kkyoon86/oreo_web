@@ -19,7 +19,30 @@ path.cls-1 {
   fill: rgba(0, 0, 0, 0);
   z-index: 10;
   stroke: #e45700;
+  display: block;
 }
+
+path.cls-2 {
+  display: none;
+  stroke-width: 2px;
+  fill: rgba(0, 0, 0, 0);
+  z-index: 10;
+  stroke: #e45700;
+}
+
+svg.svg1 {
+  display: block;
+}
+
+svg.svg2 {
+  display: none;
+}
+
+
+svg.svg3 {
+  display: none;
+}
+
 
 .imgCommon {
   position: absolute;
@@ -55,12 +78,12 @@ path.cls-1 {
 }
 
 .imgCont6 {
-  top: 16vh;
+  top: 0;
   left: 70vw;
 }
 
 .imgCont7 {
-  top: 50vh;
+  top: 30vh;
   left: 80vw;
 }
 
@@ -69,65 +92,135 @@ path.cls-1 {
   left: 42vw;
 }
 
+.imgCont9 {
+  top: 62vh;
+  left: 14vw;
+}
+
+.imgCont10 {
+  top: 64vh;
+  left: 82vw;
+}
+
+.imgCont11 {
+  top: 80vh;
+  left: 0;
+}
+
+.imgCont12 {
+  top: 80vh;
+  left: 54vw;
+}
+
+
+
+
+
 @media only screen and (max-width: 600px) {
   .portfolioContainer {
 
     overflow: auto;
-    height: auto;
+
   }
 
   .svgBox {
+    width: 100%;
     position: sticky;
     z-index: 10;
     top: 0;
     left: 0;
   }
+
+  svg.svg1 {
+    display: none;
+  }
+
+  svg.svg2 {
+    position: fixed;
+    display: block;
+  }
+  svg.svg3 {
+    display: block;
+    position: fixed;
+    bottom: 0;
+  }
   path.cls-1 {
     stroke-width: 2px;
-    fill: #e45700;
     stroke: #e45700;
+    display: none;
+  }
+
+  path.cls-2 {
+    stroke-width: 2px;
+    fill: rgba(0, 0, 0, 0);
+    stroke: #e45700;
+    display: block;
+  }
+  path.cls-3 {
+    stroke-width: 2px;
+    fill: rgba(0, 0, 0, 0);
+    stroke: #e45700;
+    display: block;
   }
   .imgCommon {
     position: relative;
+    width: 100%;
+    box-shadow: none;
   }
   .imgCont1 {
-    top: 1vh;
+    top: 0;
     left: 0;
   }
 
   .imgCont2 {
-    top: 10vh;
-    left: 20vw;
+    top: 0;
+    left: 0;
   }
 
   .imgCont3 {
-    top: 30vh;
-    left: 50vw;
+    top: 0;
+    left: 0;
   }
 
   .imgCont4 {
-    top: 20vh;
-    left: 30vw;
+    top: 0;
+    left: 0;
   }
 
   .imgCont5 {
-    top: 40vh;
-    left: 10vw;
+    top: 0;
+    left: 0;
   }
 
   .imgCont6 {
-    top: 16vh;
-    left: 70vw;
+    top: 0;
+    left: 0;
   }
 
   .imgCont7 {
-    top: 50vh;
-    left: 80vw;
+    top: 0;
+    left: 0;
   }
 
   .imgCont8 {
-    top: 70vh;
-    left: 42vw;
+    top: 0;
+    left: 0;
+  }
+  .imgCont9 {
+    top: 0;
+    left: 0;
+  }
+  .imgCont10 {
+    top: 0;
+    left: 0;
+  }
+  .imgCont11 {
+    top: 0;
+    left: 0;
+  }
+  .imgCont12 {
+    top: 0;
+    left: 0;
   }
 
 
