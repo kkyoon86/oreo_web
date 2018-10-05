@@ -25,6 +25,7 @@ button.openWin {
 }
 
 .svgBox {
+
   position: relative;
   z-index: 10;
 }
