@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+span.lb-number {
+  display: none !important;
+}
+
 button.openWin {
   top: 50%;
   position: absolute;
@@ -10,6 +14,7 @@ button.openWin {
   font-weight: 700;
   border: none;
   animation: fadeup 2s;
+  cursor: pointer;
 }
 
 .portfolioContainer {
@@ -24,14 +29,14 @@ button.openWin {
   z-index: 10;
 }
 
-path.cls-1 {
+/*path.cls-1 {
   position: fixed;
   stroke-width: 2px;
   fill: rgba(0, 0, 0, 0);
   z-index: 10;
   stroke: #e45700;
   display: block;
-}
+}*/
 
 path.cls-2 {
   display: none;
@@ -41,7 +46,24 @@ path.cls-2 {
   stroke: #e45700;
 }
 
+svg.svg1 {
+  margin-top: 1vw;
+  margin-left: 1vw;
+  height: 10vw;
+  animation-name: rotateLogo;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(-360deg)
+  }
+}
 
 svg.svg2 {
   display: none;
@@ -69,8 +91,8 @@ svg.svg6 {
 }
 
 .imgCont1 {
-  top: 2vh;
-  left: 4vw;
+  top: 0;
+  left: 0;
 }
 
 .imgCont2 {
@@ -146,17 +168,32 @@ svg.svg6 {
     top: 0;
     left: 0;
   }
-
+  img.logoTop {
+    z-index: 100;
+    position: fixed;
+    width: 50vw;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  img.logoBottom {
+    z-index: 100;
+    position: fixed;
+    width: 30vw;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   svg.svg1 {
     display: none;
   }
 
   svg.svg2 {
     position: fixed;
-    display: block;
+    display: none;
   }
   svg.svg3 {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 0;
   }
@@ -269,6 +306,14 @@ svg.svg6 {
   svg.svg3 {
     display: none;
   }
+
+  img.logoTop {
+    display: none;
+  }
+  img.logoBottom {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-height: 400px) {}
