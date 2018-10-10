@@ -17,6 +17,7 @@ button.openWin {
   animation: fadeup 2s;
   cursor: pointer;
   line-height: 32px;
+  letter-spacing: -1px;
 }
 
 .portfolioContainer {
